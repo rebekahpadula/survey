@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Survey</title>
+	<link rel="stylesheet" href="index.css">
+</head>
+<body>
+	<h2>Take the survey below!</h2>
+	<p> First we need some info.</p>
+		<form method="post" action="localhost3000">
+			<fieldset>
+				<legend>Your Info</legend>
+			<label for="firstname">First Name</label>
+			<input id="firstname" type="text" name="firstname">
+			<label for="lastname">Last Name</label>
+			<input id="lastname" type="text" name="lastname">
+			<label for="address">Address</label>
+			<input id="address" type="text" name="address">
+			<label for="city">City</label>
+			<input id="city" type="text" name="city">
+			<label for="zipcode">Zip Code</label>
+			<input id="zipcode" type="text" name"zipcode">
+			<select name="State">
+				<option value="0">California</option>
+				<option value="1">Ohio</option>
+				<option value"2">Alaska</option>
+				<option value "3">South Carolina</option>
+			</select>
+			<select name="Age">
+				<option value="0">0-17</option>
+				<option value="1">18-34</option>
+				<option value="2">over 35</option>
+			</select>
+			<ul>
+				<li>
+					<input id="male" type="radio" name="gender" value="male"> Male
+					<input id="female" type="radio" name="gender" value="female"> Female
+				</li>
+			</ul>
+			<label for="ethnicity">Ethnicity</label>
+			<select name="ethnicity">
+				<option value="0">Caucasian</option>
+				<option value="1">Hispanic</option>
+				<option value="2">African-American</option>
+				<option value="3">Other</option>
+				<option value="4">Don't Answer</option>
+			</select>
+		</fieldset>
+		<fieldset>
+			<legend>Questions</legend>
+			<div class="q1">
+				<label for="q1">In the last 12 months how many films have you seen in theatres?</label>
+				<ul>
+					<li>
+						<input type="checkbox" name="box1" value="0-5"> 0-5
+					</li>
+					<li> 
+						<input type="checkbox" name="box2" value="6-10"> 6-10
+					</li>
+					<li>
+						<input type="checkbox" name="box3" value="morethan10"> More than 10
+					</li>
+				</ul>
+			</div>
+			<div class-"q2">
+				<label for="q2">In the last 12 months, what genres of movies have you seen in theatres? (Select all that apply)</label>
+				<ul>
+					<li>
+						<input type="checkbox" name="box1" value="action-adventure"> Action-Adventure 
+					</li>
+					<li>
+						<input type="checkbox" name="box2" value="sci-fi"> Sci-Fi
+					</li>
+
+					<li>
+						<input type="checkbox" name="box3" value="comedy"> Comedy
+					</li>
+
+					<li>
+						<input type="checkbox" name="box4" value="thriller"> Thriller
+					</li>
+
+					<li>
+						<input type="checkbox" name="box5" value="musical"> Musical
+					</li>
+
+					<li>
+						<input type="checkbox" name="box6" value="animated"> Animated
+					</li>
+					
+					<li>
+						<input type="checkbox" name="box7" value="horror"> Horror
+					</li>
+					
+					<li>
+						<input type="checkbox" name="box8" value="family"> Family
+					</li>
+					
+					<li>
+						<input type="checkbox" name="box9" value="documentary"> Documentary
+			</div>
+			<div class="q3">
+				<label for="q3">If you like watching movies in the theatre, how likely are you to buy the dvd/blue-ray layer?</label>
+				<ul>
+					<li> 
+						<input type="checkbox" name="box1" value="Very likely"> Very likely
+					</li>
+					<li>
+						<input type="checkbox" name="box2" value="somewhatlikely"> Somewhat likely
+					</li>
+					<li>
+						<input type="checkbox" name="box3" value="notverylikely"> Not very likely
+					</li>
+					<li>
+						<input type="checkbox" name="box4" value="notlikelyatall"> Not likely at all
+					</li>
+				</ul>
+			</div>
+			<div class="q4">
+				<label for="q4">
+				Which of the following aspects do you consider most important to a good movie?</label>
+				<ul>
+					<li>
+						<input type="radio" name="radio1" value="casting"> Casting
+					</li>
+					<li>
+						<input type="radio" name="radio1" value="writing"> Writing
+					</li>
+					<li>
+						<input type="radio" name="radio1" value="specialeffects"> Special Effects
+					</li>
+					<li>
+						<input type="radio" name="radio1" value="directing"> Directing	
+					</li>
+				</ul>
+			</div>
+			<div>
+				<label for="q5">How likely are you to watch a movie during its opening weekend?</label>
+				<ul>
+					<li>
+						<input type="radio" name="radio2" value="verylikely"> Very likely
+					</li>
+					<li> 
+						<input type="radio" name="radio2" value="somewhatlikely"> Somewhat likely
+					</li>
+					<li> 
+						<input type="radio" name="radio2" value="notverylikely"> Not very likely
+					</li>
+					<li>
+						<input type="radio" name="radio2" value="notlikelyatall"> Not likely at all
+					</li>
+				</ul>
+			</div>
+			<div class="q6">
+				<label for="q6">In the last 12 months, what is the best movie you've seen in theatres?</label>
+				<input>
+			</div>
+			<div class="q7">
+				<label for="q7">Briefly describe why you found the movie enjoyable.</label>
+				<textarea></textarea>
+			</div>
+			<div class="q8">
+				<label for="q8">How likely are you to see a movie in theatres a second time?</label>
+				<ul>
+					<li>
+						<input type="radio" name="radio3" value="verylikely"> Very likely
+					</li>
+					<li> 
+						<input type="radio" name="radio3" value="somewhatlikely"> Somewhat Likely
+					</li>
+					<li>
+						<input type="radio" name="radio3" value="notverylikely"> Not very likely
+					</li>
+					<li> 
+						<input type="radio" name="radio3" value="notlikelyatall"> Not likely at all
+					</li>
+				</ul>
+				<input type="submit" value="submit"
+			</div>
+	</form>
+	</fieldset>
+
+
+
+
+</body>
+</html>
