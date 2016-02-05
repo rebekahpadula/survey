@@ -14,9 +14,10 @@ font-size: .5em;
 
 }
 
-.infolegend {
-	text-weight: bold;
+.legquestions {
+	font-weight: bold;
 }
+
 
 .infoq {
 	font-weight: bold;
@@ -28,6 +29,31 @@ p {
 	text-align: center;
 }
 
+label {
+	margin: 5px;
+	font-weight: bold;
+}
+
+ul label {
+	font-weight: normal;
+}
+
 ul {
 	list-style-type: none;
+	text-align: left;
+}
+
+.q {
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+#send {
+	background: #f5f5f5;
+	border-radius: 10px;
+	border: 5pxpx;
+	height: 60spx;
+	width: 60px;
+	font-size: 20px;
+
 }
