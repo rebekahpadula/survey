@@ -8,7 +8,7 @@
 		<body>
 			<form method="post" action="localhost3000">
 			<fieldset class="1stfieldset">
-				<legend>Your Info</legend>
+				<legend class="infolegend">Your Info</legend>
 				<div class=infoq>
 					<label for id="firstname" type="text" name="firstname">First Name</label>
 					<input id="firstname" type="text" name="firstname">
@@ -36,17 +36,19 @@
 							<input id="male" type="radio" name="gender" value="male"> Male
 							<input id="female" type="radio" name="gender" value="female"> Female
 						</li>
+						<li>	
+							<label for="ethnicity">Ethnicity</label>
+							<select name="ethnicity">
+							<option value="0">Caucasian</option>
+							<option value="1">Hispanic</option>
+							<option value="2">African-American</option>
+							<option value="3">Other</option>
+							<option value="4">Don't Answer</option>
+							</select>
+						</li>
 					</ul>
-					<label for="ethnicity">Ethnicity</label>
-					<select name="ethnicity">
-						<option value="0">Caucasian</option>
-						<option value="1">Hispanic</option>
-						<option value="2">African-American</option>
-						<option value="3">Other</option>
-						<option value="4">Don't Answer</option>
-					</select>
 				</div>
-				</fieldset>
+			</fieldset>
 				<fieldset class="2ndfieldset">
 					<legend>Questions</legend>
 					<div class="q1">

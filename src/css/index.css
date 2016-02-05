@@ -9,23 +9,25 @@ h2 {
 }
 
 body { 
-font-size: .5em;}
+font-size: .5em;
 
-legend {
-	font-weight: bold;
+
+}
+
+.infolegend {
+	text-weight: bold;
 }
 
 .infoq {
-	font-size: .75em;
 	font-weight: bold;
-	padding: 5px;
-	margin: 10px;
-}
+	font-size: .75em;
 
-.firstname {
-	margin: 20px;
 }
 
 p {
 	text-align: center;
+}
+
+ul {
+	list-style-type: none;
 }
